@@ -1,0 +1,31 @@
+//----------------------------------------------------------------------------
+ProcessConfig = uSimMarine
+{
+    AppTick   = 10
+    CommsTick = 10
+
+#ifdef START_X
+    START_X       = $(START_X)
+#else
+    START_X       = 0
+#endif
+#ifdef START_Y
+    START_Y       = $(START_Y)
+#else
+    START_Y       = 0
+#endif
+    START_SPEED   = 0
+
+#ifdef START_HEADING
+    START_HEADING = $(START_HEADING)
+#else
+    START_HEADING = 180
+#endif
+
+#ifdef BACKGROUND_MODE true
+    PREFIX	  = NAV
+#else
+    PREFIX	  = SIM
+#endif
+}
+

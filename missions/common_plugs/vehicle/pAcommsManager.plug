@@ -1,0 +1,21 @@
+//------------------------------------------------
+// pAcommsManager config block
+
+ProcessConfig = pAcommsManager
+{
+   AppTick   = 4
+   CommsTick = 4
+
+   VEHICLE_ID                  = $(MODEM_ID)
+   NUM_AUVS                    = $(NUM_AUVS)
+   GPS_COVARIANCE              = $(GPS_COVARIANCE)
+   COMPASS_COVARIANCE          = $(COMPASS_COVARIANCE)
+   DEPTH_COVARIANCE            = $(DEPTH_COVARIANCE)
+   RANGE_COVARIANCE	       = $(RANGE_COVARIANCE)
+   LCM_PROVIDER                = 766$(MODEM_ID)
+   BACKGROUND_MODE	       = $(BACKGROUND_MODE)
+   RUNTYPE		       = $(RUNTYPE)
+   SPEED_OF_SOUND	       = $(SPEED_OF_SOUND)
+   PACKET_TYPE		       = $(PACKET_TYPE)
+}
+

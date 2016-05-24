@@ -1,0 +1,9 @@
+package coop;
+struct relative_range_t {
+       int64_t send_t; //
+       int64_t receive_t; // = sent_t + owtt
+       int32_t send_id; 
+       int32_t receive_id;
+       double mu;
+       double omega;
+}

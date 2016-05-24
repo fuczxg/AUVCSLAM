@@ -1,0 +1,27 @@
+processConfig = uFldShoreBroker
+{
+	AppTick = 2
+	CommsTick = 2
+	qbridge = DEPLOY, RETURN, MOOS_MANUAL_OVERIDE
+
+	bridge   = src=APPCAST_REQ 
+  	bridge   = src=UHZ_MISSION_PARAMS
+	bridge   = src=UHZ_OPTIONS_SUMMARY
+
+#ifdef BACKGROUND_MODE true
+	bridge   = src=UHZ_CONFIG_ACK_$V,       alias=UHZ_CONFIG_ACK
+	bridge   = src=UHZ_HAZARD_REPORT_$V,    alias=UHZ_HAZARD_REPORT
+	bridge   = src=UHZ_DETECTION_REPORT_$V, alias=UHZ_DETECTION_REPORT
+#else
+	bridge   = src=UHZ_CONFIG_ACK_$V_GT,       alias=UHZ_CONFIG_ACK
+	bridge   = src=UHZ_HAZARD_REPORT_$V_GT,    alias=UHZ_HAZARD_REPORT
+	bridge   = src=UHZ_DETECTION_REPORT_$V_GT, alias=UHZ_DETECTION_REPORT
+#endif
+	bridge   = src=HAZARDSET_REQUEST_ALL,   alias=HAZARDSET_REQUEST
+
+
+
+	bridge =  src=CRS_RANGE_REPORT_$V, alias=CRS_RANGE_REPORT
+	bridge =  src=CRS_RANGE_REPORT
+
+}

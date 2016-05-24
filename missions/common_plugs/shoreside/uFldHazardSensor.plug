@@ -1,0 +1,40 @@
+//--------------------------------------------------
+// uFldHazardSensor Configuration Block
+
+ProcessConfig = uFldHazardSensor
+{
+  AppTick       = 4
+  CommsTick     = 4
+
+  max_appcast_events = 20
+
+  sensor_config = width=5,  exp=8, pclass=0.88, max=1
+  sensor_config = width=10, exp=6, pclass=0.70
+  sensor_config = width=25, exp=4, pclass=0.63
+  sensor_config = width=50, exp=2, pclass=0.55
+
+  swath_length  = 5
+
+  default_hazard_shape = square
+  default_hazard_color = blue  
+  default_benign_shape = square
+
+  min_classify_interval = 30
+  min_reset_interval    = 100000
+
+  swath_transparency = 0.35
+  seed_random        = false
+
+  options_summary_interval = 5
+
+  show_swath=true
+  show_hazards=on_detection
+  show_reports=30
+  show_pd=false
+  show_pfa=false
+
+  max_turn_rate = 10.0
+  max_vehicle_speed = 10.0
+
+  hazard_file   = $(HAZARD_FILE)
+}

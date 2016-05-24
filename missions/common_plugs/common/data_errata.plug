@@ -1,0 +1,14 @@
+
+#ifdef simulation
+Simulator    = true
+MOOSTimeWarp = 1
+#elseifdef runtime
+Simulator = false
+MOOSTimeWarp = 1
+#endif
+
+#define VNAME $(VEHICLE_NAME)
+
+Community  = $(VNAME)
+ServerHost = $(VHOST)
+ServerPort = $(VPORT)

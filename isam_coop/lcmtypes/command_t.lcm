@@ -1,0 +1,5 @@
+package coop;
+struct command_t {
+       int32_t command;
+       double  data;
+}

@@ -1,0 +1,14 @@
+//----------------------------------------------------------------------------
+Behavior = BHV_ConstantDepth
+{
+  name      = deploy_depth
+  duration  = no-time-limit
+  condition = DEPLOY = true
+  updates   = DEPTH_UPDATE
+#ifdef DEPLOY_DEPTH
+        depth = $(DEPLOY_DEPTH)
+#else
+        depth = 0.0
+#endif
+}
+

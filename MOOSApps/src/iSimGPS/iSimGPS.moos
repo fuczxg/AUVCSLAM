@@ -1,0 +1,9 @@
+//------------------------------------------------
+// iSimGPS config block
+
+ProcessConfig = iSimGPS
+{
+   AppTick   = 4
+   CommsTick = 4
+}
+

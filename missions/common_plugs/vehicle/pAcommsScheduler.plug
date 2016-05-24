@@ -1,0 +1,13 @@
+//------------------------------------------------
+// pAcommsScheduler config block
+
+ProcessConfig = pAcommsScheduler
+{
+   AppTick   = 4
+   CommsTick = 4
+
+   NUM_AUVS        = $(NUM_AUVS) 
+   SLOT_TIME       = $(SLOT_TIME)
+   START_ON_DEPLOY = $(START_ON_DEPLOY)
+}
+

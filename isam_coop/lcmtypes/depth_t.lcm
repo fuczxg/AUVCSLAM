@@ -1,0 +1,5 @@
+package coop;
+struct depth_t {
+       double mu;
+       double omega;
+}

@@ -1,0 +1,5 @@
+package coop;
+struct sidescan_detections_t {
+       int32_t n;
+       sidescan_detection_t detections[n];
+}

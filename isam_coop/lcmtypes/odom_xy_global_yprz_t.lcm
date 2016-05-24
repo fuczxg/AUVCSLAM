@@ -1,0 +1,8 @@
+package coop;
+struct odom_xy_global_yprz_t {
+       int64_t t[2]; //start and finish
+       int32_t id;
+       odom_xy_t odom_xy; //x and y
+       rot3_t attitude; // ypr
+       depth_t depth; //z
+}

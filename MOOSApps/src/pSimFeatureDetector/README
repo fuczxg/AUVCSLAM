@@ -1,0 +1,3 @@
+Works in conjunction with uFldToolbox.
+
+uFldHazardSensor will send detections from shoreside sim. These will be treated as features here.

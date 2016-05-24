@@ -1,0 +1,6 @@
+package coop;
+struct virtual_pose3_pose3_t {
+       int64_t t[2]; //start and finish
+       int32_t id;
+       pose3_t pose;
+}

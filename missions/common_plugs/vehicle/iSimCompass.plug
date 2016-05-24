@@ -1,0 +1,7 @@
+ProcessConfig = iSimCompass
+{
+	AppTick = 10
+	CommsTick = 10
+	COMPASS_COVARIANCE = $(COMPASS_COVARIANCE)
+	BACKGROUND_MODE = $(BACKGROUND_MODE)
+}

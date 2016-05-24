@@ -1,0 +1,14 @@
+ProcessConfig = uFldContactRangeSensor
+{
+	AppTick = 4
+	CommsTick = 4
+	reach_distance = default = nolimit
+	reply_distance = default = nolimit
+	ping_wait = default = 0
+	report_vars = short
+	rn_gaussian_sigma = 3.0
+	sensor_arc = 360
+	ping_color = white
+	echo_color = chartruse
+	display_pulses = false
+}

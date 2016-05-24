@@ -1,0 +1,15 @@
+Author: Liam Paull
+
+This is the top level project directory for the AUVCSLAM project.
+For algorithmic details see the ICRA 2015 submission " "
+
+
+To compile:
+1) Satisfy the dependencies of the individual pods
+2) make checkout
+3) make
+
+
+To run thing:
+Choose a mission in the mission folder and type
+./simulation_launch

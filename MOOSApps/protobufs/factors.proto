@@ -1,0 +1,62 @@
+import "dccl/protobuf/option_extensions.proto";
+
+message virtual_pose3d_pose3d_measurement
+{
+	required double mu_x     = 3 [(dccl.field) = {max: 500  min: -500 precision: 4}];
+	required double mu_y     = 4 [(dccl.field) = {max: 500 min: -500 precision: 4}];
+	required double mu_z     = 5 [(dccl.field) = {max: 50 min: 0 precision: 3}];
+	required double mu_psi   = 6 [(dccl.field) = {max: 6.5 min: -6.5 precision: 4}];
+	optional double mu_theta = 7 [(dccl.field) = {max: 3.1415 min: -3.1415 precision: 2}];
+	optional double mu_phi   = 8 [(dccl.field) = {max: 3.1415 min: -3.1415 precision: 2}];
+
+	required double omega_xx = 9  [(dccl.field) = {max: 50 min: 0 precision: 3}];
+	required double omega_xy = 10 [(dccl.field) = {max: 50 min: -50 precision: 3}];
+	required double omega_yy = 11 [(dccl.field) = {max: 50 min: 0 precision: 3}];
+
+	required uint64 t1 = 12 [(dccl.field) = {min: 0 max: 86400000}];
+	required uint64 t2 = 13 [(dccl.field) = {min: 0 max: 86400000}];
+
+}
+
+message virtual_pose3d_point3d_measurement
+{
+	required double mu_x     = 3  [(dccl.field) = {max: 500 min: -500 precision: 4}];
+	required double mu_y     = 4  [(dccl.field) = {max: 500 min: -500 precision: 4}];
+	required double mu_z     = 5  [(dccl.field) = {max: 50 min: 0 precision: 3}];
+
+	required double omega_xx = 6  [(dccl.field) = {max: 50 min: 0 precision: 3}];
+	required double omega_xy = 7  [(dccl.field) = {max: 50 min: -50 precision: 3}];
+	required double omega_yy = 8  [(dccl.field) = {max: 50 min: 0 precision: 3}];
+	required double omega_zz = 9  [(dccl.field) = {max: 50 min: 0 precision: 3}];
+	required uint64 t = 10 [(dccl.field) = {min: 0 max: 86400000}];
+	required uint32 feature_id = 11 [(dccl.field) = {min: 0 max: 2000}];
+
+}
+
+message relative_range_measurement
+{
+	required uint32 receive_id  = 3    [(dccl.field) = {max: 8 min: 0}];
+	required uint32 send_id   = 4    [(dccl.field) = {max: 8 min: 0}];
+	required uint64 receive_time = 5 [(dccl.field) = {min: 0 max: 86400000}];
+	required uint64 send_time = 6 [(dccl.field) = {min: 0 max: 86400000}];
+	required double range  = 7    [(dccl.field) = {max: 1500 min: 0 precision: 5}];
+}
+
+message global_measurement
+{
+	required double x = 3 [(dccl.field) = {max: 500 min: -500 precision: 4}];
+	required double y = 4 [(dccl.field) = {max: 500 min: -500 precision: 4}];
+	optional double z = 5 [(dccl.field) = {max: 50 min: 0 precision: 2}];
+	optional double phi = 6 [(dccl.field) = {max: 3.1415 min: -3.1415 precision: 2}];
+	optional double theta = 7 [(dccl.field) = {max: 3.1415 min: -3.1415 precision: 2}];
+	required double psi = 8 [(dccl.field) = {max: 6.3 min: 0.0 precision: 4}];
+	required uint64 t = 9 [(dccl.field) = {min: 0 max: 86400000}];
+
+
+}
+
+message ack
+{
+	required uint32 bit = 3 [(dccl.field) = {max: 1 min: 0}];
+	required uint32 id = 4 [(dccl.field) = {max: 8 min: 0}];
+}

@@ -1,0 +1,16 @@
+import "dccl/protobuf/option_extensions.proto";
+import "factors.proto";
+
+message packet_master
+{
+	option (dccl.msg) = {id: 120
+	       		     max_bytes: 2000 //it is up to you to make sure that your packet fits in the slot
+			     codec_version: 3};
+
+       	required uint32 src_id = 10 [(dccl.field) = {max: 8 min: 0}];
+	repeated virtual_pose3d_pose3d_measurement pose_poses = 1 [(dccl.field) = {max_repeat: 10}];
+	repeated virtual_pose3d_point3d_measurement pose_points = 2 [(dccl.field) = {max_repeat: 20}];
+	repeated relative_range_measurement relative_ranges = 3 [(dccl.field) = {max_repeat: 10}];
+	optional global_measurement global = 4;
+	repeated ack acks = 5 [(dccl.field) = {max_repeat: 10}];
+}

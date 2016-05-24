@@ -1,0 +1,7 @@
+ProcessConfig = iSimDVL
+{
+	AppTick = 10
+	CommsTick = 10
+	DVL_COVARIANCE = $(DVL_COVARIANCE)
+	BACKGROUND_MODE = $(BACKGROUND_MODE)
+}

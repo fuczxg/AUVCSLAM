@@ -1,0 +1,19 @@
+ProcessConfig = iAcommsDriver
+{
+    IterateMode = 0    // regular iterate and mail
+    AppTick     = 5
+    PortName = /dev/ttyUSB1
+    ID       = 5
+ 
+    PSK_minipackets   = false
+    enable_ranging    = true
+    show_range_pulses = true
+ 
+#ifdef RUNTYPE simulation
+    in_sim = true
+#endif
+    sim_server = $(SHOREIP)
+    sim_port = $(SHORE_PORT)
+
+    nav_prefix = SIM
+}

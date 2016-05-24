@@ -1,0 +1,8 @@
+ProcessConfig = pShare
+{
+	AppTick = 2
+	CommsTick = 2
+
+	input = route = $(SHOREIP):$(SHORE_LISTEN)
+	input = route = multicast_9
+}

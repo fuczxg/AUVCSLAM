@@ -1,0 +1,7 @@
+ProcessConfig = iSimDepth
+{
+	AppTick = 4
+	CommsTick = 4
+	DEPTH_COVARIANCE = $(DEPTH_COVARIANCE)
+	BACKGROUND_MODE = $(BACKGROUND_MODE)
+}

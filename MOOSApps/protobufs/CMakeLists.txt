@@ -1,0 +1,6 @@
+#protobuf_include_dirs(${CMAKE_SOURCE_DIR})
+set(PROTOBUF_IMPORT_DIRS ${GOBY_INCLUDE_DIRS} ${PROTOBUF_INCLUDE_DIRS})
+protobuf_generate_cpp(PROTO_SRCS PROTO_HDRS  factors.proto packet.proto)
+add_library(messages SHARED ${PROTO_SRCS} ${PROTO_HDRS})
+target_link_libraries(messages ${PROTOBUF_LIBRARIES} ${GOBY_LIBRARIES})
+pods_install_libraries(messages)

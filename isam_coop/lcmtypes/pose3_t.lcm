@@ -1,0 +1,9 @@
+package coop;
+struct pose3_t {
+       int32_t id;
+       int64_t t;
+       double mu[6]; // x y z, yaw pitch roll
+       double inf[6]; // information vector
+       double sigma[6][6]; 
+       double omega[6][6];
+}

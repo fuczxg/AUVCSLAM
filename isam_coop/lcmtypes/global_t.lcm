@@ -1,0 +1,8 @@
+package coop;
+struct global_t {
+       int32_t id;
+       int64_t t;
+       pos2_t pos;
+       depth_t depth;
+       rot3_t attitude;
+}

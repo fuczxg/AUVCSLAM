@@ -1,0 +1,28 @@
+//----------------------------------------------------------------------------
+Behavior = BHV_Waypoint
+{
+  name       = waypt_return
+  pwt        = 100
+  condition  = RETURN = true
+  condition  = DEPLOY = true
+  condition  = ABORT  = false 
+  updates    = UPDATES_RETURN
+  perpetual  = true
+  endflag    = RETURN = false
+  endflag    = DEPLOY = false
+  endflag    = VEHICLE_UNDERWAY = false
+
+         speed = 2.0
+        radius = 2.0
+     nm_radius = 8.0
+#ifdef RETURN_X
+#ifdef RETURN_Y
+        point = $(RETURN_X),$(RETURN_Y)
+#else
+        point = 0,0
+#endif
+#else
+        point = 0,0
+#endif
+}
+

@@ -1,0 +1,9 @@
+//------------------------------------------------
+// iSimDVL config block
+
+ProcessConfig = iSimDVL
+{
+   AppTick   = 4
+   CommsTick = 4
+}
+

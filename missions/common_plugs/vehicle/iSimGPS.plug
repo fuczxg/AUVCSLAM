@@ -1,0 +1,8 @@
+ProcessConfig = iSimGPS
+{
+	AppTick = 4
+	CommsTick = 4
+	GPS_COVARIANCE = $(GPS_COVARIANCE)
+	MAX_DEPTH = 0.2
+	BACKGROUND_MODE = $(BACKGROUND_MODE)
+}

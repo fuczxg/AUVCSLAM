@@ -1,0 +1,9 @@
+package coop;
+struct sidescan_detection_t { 
+       int16_t id; // the vehicle where it was detection from.
+       int32_t feature_id; // the id of feature used to hack data association
+       double mu; // the measurement: orthogonal distance from vehicle to feature (projected onto 2d plane)
+       int64_t t; // the time that the measurement was made. This is important because detections won't necessarily come in real-time. Image mosiacs will be processed in batch and this time will tell us which node to hang the measurement on.
+       double omega[3][3]; // uncertainty associated with feature detection (body x error from error in timing, body y error from error in ranging, z from error in flat seabed assumption?)
+       
+}

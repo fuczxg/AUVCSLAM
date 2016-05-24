@@ -1,0 +1,14 @@
+#define SHOREIP localhost
+#define SHORE_LISTEN 9303
+#define SHORE_PORT 9003
+
+#define NUM_AUVS 2
+#define SLOT_TIME 10.0
+#define BACKGROUND_MODE false
+#define PARTIAL_LOSS_RATE 0.0  //  partial loss of packet
+#define COMPLETE_LOSS_RATE 0.0 //  total loss of packet, ranging still happens
+#define SYNC_LOSS_RATE 0.2  //     packet not received at all 
+#define LOSS_PER_FRAME 0.0  //     given there's a partial loss, prob of loss of each frame within packet
+#define START_ON_DEPLOY false
+#define SPEED_OF_SOUND 1450
+#define PACKET_TYPE 0 //CL

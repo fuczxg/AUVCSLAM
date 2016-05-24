@@ -1,0 +1,14 @@
+package coop;
+struct acomms_packet_t {
+       int8_t source_id;
+       int32_t num_poses;
+       virtual_pose3_pose3_t virtual_pose_poses[num_poses];
+       int32_t num_landmarks;
+       virtual_pose3_point3_t virtual_pose_points[num_landmarks];
+       int8_t num_acks;
+       boolean acks[num_acks];
+       int8_t num_ranges;
+       relative_range_t ranges[num_ranges];
+       boolean has_global;
+       global_t global_pose;
+}

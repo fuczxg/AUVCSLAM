@@ -1,0 +1,5 @@
+package coop;
+struct rot3_t {
+       double mu[3]; //yaw pitch roll
+       double omega[3][3];
+}

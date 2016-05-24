@@ -1,0 +1,7 @@
+#define SHOREIP localhost
+#define SHORE_LISTEN 9303
+
+
+#define NUM_AUVS 2
+
+

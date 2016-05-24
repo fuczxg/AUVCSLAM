@@ -1,0 +1,11 @@
+//----------------------------------------------------------------------------
+ProcessConfig = uProcessWatch
+{
+    AppTick   = 2
+    CommsTick = 2
+
+    nowatch = uTimerScript
+    nowatch = gdb
+    nowatch = isam_coop
+}
+

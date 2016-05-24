@@ -1,0 +1,2 @@
+LatOrigin  = $(LATORIGIN)
+LongOrigin = $(LONGORIGIN)

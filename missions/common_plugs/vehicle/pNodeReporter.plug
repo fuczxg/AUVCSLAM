@@ -1,0 +1,13 @@
+//------------------------------------------------------------------------
+ProcessConfig = pNodeReporter
+{
+    AppTick   = 5
+    CommsTick = 5
+
+
+    alt_nav_prefix = SIM
+    alt_nav_name   = _GT
+
+    VESSEL_TYPE = AUV
+}
+

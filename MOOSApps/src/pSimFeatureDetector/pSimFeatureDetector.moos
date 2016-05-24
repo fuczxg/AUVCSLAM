@@ -1,0 +1,9 @@
+//------------------------------------------------
+// pSimFeatureDetector config block
+
+ProcessConfig = pSimFeatureDetector
+{
+   AppTick   = 4
+   CommsTick = 4
+}
+

@@ -1,0 +1,9 @@
+package coop;
+struct command_list_t {
+       const int32_t UPDATE=1;
+       const int32_t BATCH=2;
+       const int32_t GENERATE_PACKET=3;
+       const int32_t POST_TRAJECTORY=4;
+       const int32_t REQUEST_PRIOR=5;
+       const int32_t SET_PACKET_TYPE=6;
+}

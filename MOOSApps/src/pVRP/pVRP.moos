@@ -1,0 +1,9 @@
+//------------------------------------------------
+// pVRP config block
+
+ProcessConfig = pVRP
+{
+   AppTick   = 4
+   CommsTick = 4
+}
+

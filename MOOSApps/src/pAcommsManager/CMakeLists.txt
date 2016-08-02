@@ -9,7 +9,7 @@
 
 find_path( HOVERGROUP_TRUNK_BASE
                         NAMES libraries
-                        PATHS "~/hover/code"
+                        PATHS "/home/liam/hover-kayak/code"
                         NO_DEFAULT_PATH
 )
 
